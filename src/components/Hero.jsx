@@ -1,4 +1,5 @@
 import './Hero.css'
+import heroImage from '../assets/wmd.jpg'
 
 function Hero() {
   return (
@@ -15,9 +16,7 @@ function Hero() {
         </div>
       </div>
       <div className="hero-image">
-        <div className="image-placeholder">
-          <span>👤</span>
-        </div>
+        <img src={heroImage} alt="吴明达" className="hero-photo" />
       </div>
     </section>
   )
