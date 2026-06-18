@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import './Blog.css'
 
 // 导入所有文章
@@ -30,7 +29,7 @@ const posts = [
   parsePost(post1)
 ]
 
-function Blog() {
+function Blog({ onNavigate }) {
   const [filter, setFilter] = useState('all')
   
   const categories = ['all', '技术', '日常', '行业认知']
@@ -38,6 +37,13 @@ function Blog() {
   const filteredPosts = filter === 'all' 
     ? posts 
     : posts.filter(post => post.category === filter)
+
+  const handlePostClick = (slug, e) => {
+    e.preventDefault()
+    if (onNavigate) {
+      onNavigate(`/blog/${slug}`)
+    }
+  }
 
   return (
     <section className="blog">
@@ -61,7 +67,12 @@ function Blog() {
         {/* 文章列表 */}
         <div className="posts-grid">
           {filteredPosts.map((post, index) => (
-            <Link to={`/blog/${post.slug}`} key={index} className="post-card">
+            <a 
+              href={`#/blog/${post.slug}`} 
+              key={index} 
+              className="post-card"
+              onClick={(e) => handlePostClick(post.slug, e)}
+            >
               <div className="post-header">
                 <span className="post-category">{post.category}</span>
                 <span className="post-date">{post.date}</span>
@@ -74,7 +85,7 @@ function Blog() {
                 ))}
               </div>
               <span className="read-more">阅读全文 →</span>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

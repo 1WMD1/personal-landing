@@ -1,4 +1,3 @@
-import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -13,7 +12,9 @@ const postsMap = {
 }
 
 function BlogPost() {
-  const { slug } = useParams()
+  // 从 URL hash 中获取 slug
+  const hash = window.location.hash
+  const slug = hash.replace('#/blog/', '')
   const postContent = postsMap[slug]
   
   if (!postContent) {
@@ -33,10 +34,15 @@ function BlogPost() {
     }
   })
 
+  const handleBackClick = (e) => {
+    e.preventDefault()
+    window.location.hash = '/blog'
+  }
+
   return (
     <article className="blog-post">
       <div className="blog-post-container">
-        <Link to="/blog" className="back-link">← 返回博客列表</Link>
+        <a href="#/blog" className="back-link" onClick={handleBackClick}>← 返回博客列表</a>
         
         <header className="post-header">
           <h1 className="post-title-full">{meta.title}</h1>
@@ -81,7 +87,7 @@ function BlogPost() {
         </div>
         
         <footer className="post-footer">
-          <Link to="/blog" className="back-link">← 返回博客列表</Link>
+          <a href="#/blog" className="back-link" onClick={handleBackClick}>← 返回博客列表</a>
         </footer>
       </div>
     </article>
