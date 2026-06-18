@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
@@ -9,6 +10,7 @@ function Header() {
           <a href="#home">首页</a>
           <a href="#about">关于我</a>
           <a href="#skills">技能</a>
+          <Link to="/blog">博客</Link>
           <a href="#contact">联系</a>
         </nav>
       </div>

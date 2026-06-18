@@ -1,0 +1,153 @@
+.blog-post {
+  padding: 8rem 2rem 4rem;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.blog-post-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.back-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #1d4ed8;
+}
+
+.post-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.post-title-full {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.post-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.post-tags-full {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.post-content {
+  line-height: 1.8;
+  color: #374151;
+}
+
+.post-content h1 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin: 2.5rem 0 1rem;
+}
+
+.post-content h2 {
+  font-size: 1.6rem;
+  color: #1f2937;
+  margin: 2rem 0 1rem;
+}
+
+.post-content h3 {
+  font-size: 1.3rem;
+  color: #1f2937;
+  margin: 1.5rem 0 1rem;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+.post-content blockquote {
+  border-left: 4px solid #2563eb;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.post-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.post-content th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 2rem 0;
+}
+
+.post-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .post-title-full {
+    font-size: 1.8rem;
+  }
+  
+  .post-content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .post-content h2 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,129 @@
+.blog {
+  padding: 6rem 2rem;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.blog-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.filter-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.filter-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.post-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.post-category {
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.post-date {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.post-title {
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.post-summary {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background: #f3f4f6;
+  color: #4b5563;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.read-more {
+  color: #2563eb;
+  font-weight: 600;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+}
