@@ -1,14 +1,14 @@
 import './Skills.css'
 
 const skills = [
-  { name: 'React', level: 90, icon: '⚛️' },
-  { name: 'JavaScript', level: 95, icon: '📜' },
-  { name: 'Node.js', level: 85, icon: '🟢' },
-  { name: 'CSS/Tailwind', level: 88, icon: '🎨' },
-  { name: 'TypeScript', level: 80, icon: '🔷' },
-  { name: 'Python', level: 75, icon: '🐍' },
-  { name: 'Git', level: 85, icon: '📦' },
-  { name: 'Docker', level: 70, icon: '🐳' },
+  { name: 'C/C++', level: 95, icon: '⚡' },
+  { name: '嵌入式 Linux', level: 90, icon: '🐧' },
+  { name: 'RTOS', level: 88, icon: '⏱️' },
+  { name: 'ARM 架构', level: 85, icon: '🔧' },
+  { name: 'Python', level: 85, icon: '🐍' },
+  { name: 'AI/机器学习', level: 80, icon: '🤖' },
+  { name: '硬件设计', level: 75, icon: '🔌' },
+  { name: '物联网 IoT', level: 82, icon: '📡' },
 ]
 
 function Skills() {

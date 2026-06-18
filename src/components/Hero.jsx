@@ -6,9 +6,11 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-content">
         <h1>你好，我是 <span className="highlight">吴明达</span></h1>
-        <p className="subtitle">嵌入式软件开发者 | 噪音制造者 | 技术爱好者</p>
+        <p className="subtitle">嵌入式系统工程师 | AI时代的超级个体</p>
         <p className="description">
-          热爱用代码创造美好事物，专注于构建优雅、高效的事务
+          深耕嵌入式系统开发，融合 AI 技术赋能硬件智能化。
+          从底层驱动到云端应用，从芯片选型到算法部署，打造端边云一体化的智能解决方案。
+          用技术连接物理世界与数字世界，让每一个设备都拥有智慧。
         </p>
         <div className="hero-buttons">
           <a href="#contact" className="btn btn-primary">联系我</a>
