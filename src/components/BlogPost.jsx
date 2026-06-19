@@ -70,7 +70,22 @@ function BlogPost() {
               img({node, src, alt, ...props}) {
                 // 处理图片路径，添加 base path
                 const imageSrc = src.startsWith('/') ? `/personal-landing${src}` : src
-                return <img src={imageSrc} alt={alt} {...props} />
+                return (
+                  <img 
+                    src={imageSrc} 
+                    alt={alt} 
+                    loading="lazy"
+                    style={{ 
+                      opacity: 0,
+                      transition: 'opacity 0.3s ease',
+                      background: '#f0f0f0'
+                    }}
+                    onLoad={(e) => {
+                      e.target.style.opacity = 1
+                    }}
+                    {...props} 
+                  />
+                )
               },
               code({node, inline, className, children, ...props}) {
                 const match = /language-(\w+)/.exec(className || '')
