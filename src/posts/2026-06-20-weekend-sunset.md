@@ -6,15 +6,39 @@ tags: ["摄影", "生活", "风景"]
 summary: "工作之余，用镜头记录下的那个瞬间。"
 ---
 
-# 周末随拍：城市边缘的风景
-
-![三十岗瞬间](/personal-landing/wyq01.jpg)
+# 一起看过的风景，是比抵达终点更令人心动的事。
 
 > 拍摄设备：手机  
-> 拍摄时间：2026年5月 
+> 拍摄时间：2026年5月  
 > 地点：合肥·三十岗
 
-天空从橙红渐变到蓝，远处的绸缎在夕阳下缓缓飘动。那一刻，我突然想到：
+---
+
+## 📸 瞬间
+
+![风景 1](/personal-landing/lx01_01.jpg)
+
+![风景 2](/personal-landing/lx01_02.jpg)
+
+![风景 3](/personal-landing/lx01_03.jpg)
+
+那一刻，我突然想到：
+
+![风景 4](/personal-landing/lx01_04.jpg)
+
+![风景 5](/personal-landing/lx01_05.jpg)
+
+![风景 6](/personal-landing/lx01_06.jpg)
+
+有些风景，值得被定格。
+
+![风景 7](/personal-landing/lx01_07.jpg)
+
+![风景 8](/personal-landing/lx01_08.jpg)
+
+![风景 9](/personal-landing/lx01_09.jpg)
+
+---
 
 **保持热爱，奔赴山海。** 📸
 
