@@ -106,6 +106,25 @@
   max-width: 100%;
   border-radius: 8px;
   margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-content img:hover {
+  transform: scale(1.02);
+}
+
+/* 相册网格布局 */
+.post-content p:has(img) {
+  margin: 1rem 0;
+}
+
+/* 响应式图片 */
+@media (max-width: 768px) {
+  .post-content img {
+    margin: 1rem 0;
+    border-radius: 6px;
+  }
 }
 
 .post-content table {
