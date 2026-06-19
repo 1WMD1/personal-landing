@@ -3,9 +3,10 @@ import './Blog.css'
 
 // 导入所有文章
 import post1 from '../posts/2026-06-18-ai-embedded-engineer.md?raw'
+import post2 from '../posts/2026-06-20-weekend-sunset.md?raw'
 
 // 解析 Markdown 文件的 frontmatter
-function parsePost(content) {
+function parsePost(content, slug) {
   const parts = content.split('---')
   const frontmatter = parts[1]
   const markdown = parts[2]
@@ -20,19 +21,20 @@ function parsePost(content) {
   
   return {
     ...meta,
-    slug: 'ai-embedded-engineer',
+    slug: slug,
     content: markdown
   }
 }
 
 const posts = [
-  parsePost(post1)
+  parsePost(post2, 'weekend-sunset'),
+  parsePost(post1, 'ai-embedded-engineer')
 ]
 
 function Blog({ onNavigate }) {
   const [filter, setFilter] = useState('all')
   
-  const categories = ['all', '技术', '日常', '行业认知']
+  const categories = ['all', '作品', '思考', '日常']
   
   const filteredPosts = filter === 'all' 
     ? posts 

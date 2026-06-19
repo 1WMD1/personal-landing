@@ -21,9 +21,7 @@ function Footer() {
           <div className="footer-section">
             <h4>社交媒体</h4>
             <div className="social-links">
-              <a href="#" className="social-link">GitHub</a>
-              <a href="#" className="social-link">LinkedIn</a>
-              <a href="#" className="social-link">Twitter</a>
+              <a href="https://github.com/1WMD1" target="_blank" rel="noopener noreferrer" className="social-link">GitHub</a>
             </div>
           </div>
         </div>

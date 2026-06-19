@@ -6,9 +6,11 @@ import './BlogPost.css'
 
 // 导入文章
 import post1 from '../posts/2026-06-18-ai-embedded-engineer.md?raw'
+import post2 from '../posts/2026-06-20-weekend-sunset.md?raw'
 
 const postsMap = {
-  'ai-embedded-engineer': post1
+  'ai-embedded-engineer': post1,
+  'weekend-sunset': post2
 }
 
 function BlogPost() {

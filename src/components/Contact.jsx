@@ -12,36 +12,30 @@ function Contact() {
               如果你有任何问题或合作机会，欢迎随时联系我。
               我会尽快回复你的消息。
             </p>
-            <div className="contact-item">
-              <span className="contact-icon">📧</span>
-              <div>
-                <h4>邮箱</h4>
-                <p>example@email.com</p>
+            <div className="contact-items">
+              <div className="contact-item">
+                <span className="contact-icon">📧</span>
+                <div>
+                  <h4>邮箱</h4>
+                  <p>250881854@qq.com</p>
+                </div>
               </div>
-            </div>
-            <div className="contact-item">
-              <span className="contact-icon">📱</span>
-              <div>
-                <h4>电话</h4>
-                <p>+86 138 0000 0000</p>
+              <div className="contact-item">
+                <span className="contact-icon">📱</span>
+                <div>
+                  <h4>电话</h4>
+                  <p>+86 150 8917 9596</p>
+                </div>
               </div>
-            </div>
-            <div className="contact-item">
-              <span className="contact-icon">📍</span>
-              <div>
-                <h4>地址</h4>
-                <p>中国，北京</p>
+              <div className="contact-item">
+                <span className="contact-icon">📍</span>
+                <div>
+                  <h4>地址</h4>
+                  <p>安徽，合肥</p>
+                </div>
               </div>
             </div>
           </div>
-          <form className="contact-form">
-            <input type="text" placeholder="你的名字" required />
-            <input type="email" placeholder="你的邮箱" required />
-            <textarea placeholder="你的消息" rows="5" required></textarea>
-            <button type="submit" className="btn btn-primary">
-              发送消息
-            </button>
-          </form>
         </div>
       </div>
     </section>
