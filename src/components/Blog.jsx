@@ -7,9 +7,11 @@ import post2 from '../posts/2026-06-20-weekend-sunset.md?raw'
 
 // 解析 Markdown 文件的 frontmatter
 function parsePost(content, slug) {
-  const parts = content.split('---')
-  const frontmatter = parts[1]
-  const markdown = parts[2]
+  const firstDashIndex = content.indexOf('---')
+  const secondDashIndex = content.indexOf('---', firstDashIndex + 3)
+  
+  const frontmatter = content.substring(firstDashIndex + 3, secondDashIndex)
+  const markdown = content.substring(secondDashIndex + 3)
   
   const meta = {}
   frontmatter.split('\n').forEach(line => {

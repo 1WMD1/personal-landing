@@ -24,9 +24,11 @@ function BlogPost() {
   }
   
   // 解析 frontmatter 和 markdown
-  const parts = postContent.split('---')
-  const frontmatter = parts[1]
-  const markdown = parts[2]
+  const firstDashIndex = postContent.indexOf('---')
+  const secondDashIndex = postContent.indexOf('---', firstDashIndex + 3)
+  
+  const frontmatter = postContent.substring(firstDashIndex + 3, secondDashIndex)
+  const markdown = postContent.substring(secondDashIndex + 3)
   
   const meta = {}
   frontmatter.split('\n').forEach(line => {
@@ -66,8 +68,8 @@ function BlogPost() {
             remarkPlugins={[remarkGfm]}
             components={{
               img({node, src, alt, ...props}) {
-                // 处理图片路径
-                const imageSrc = src.startsWith('/') ? src : src
+                // 处理图片路径，添加 base path
+                const imageSrc = src.startsWith('/') ? `/personal-landing${src}` : src
                 return <img src={imageSrc} alt={alt} {...props} />
               },
               code({node, inline, className, children, ...props}) {
