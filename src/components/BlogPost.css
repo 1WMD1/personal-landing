@@ -107,7 +107,20 @@
   border-radius: 8px;
   margin: 1.5rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: opacity 0.3s ease;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.post-content img.loaded {
+  animation: none;
+  background: none;
 }
 
 .post-content img:hover {

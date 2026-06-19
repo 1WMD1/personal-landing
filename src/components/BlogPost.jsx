@@ -75,13 +75,13 @@ function BlogPost() {
                     src={imageSrc} 
                     alt={alt} 
                     loading="lazy"
+                    decoding="async"
                     style={{ 
-                      opacity: 0,
-                      transition: 'opacity 0.3s ease',
-                      background: '#f0f0f0'
+                      opacity: 0
                     }}
                     onLoad={(e) => {
                       e.target.style.opacity = 1
+                      e.target.classList.add('loaded')
                     }}
                     {...props} 
                   />
