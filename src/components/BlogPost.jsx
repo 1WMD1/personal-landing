@@ -36,13 +36,13 @@ function BlogPost() {
 
   const handleBackClick = (e) => {
     e.preventDefault()
-    window.location.hash = '/blog'
+    window.location.hash = '/personal-landing/#/blog'
   }
 
   return (
     <article className="blog-post">
       <div className="blog-post-container">
-        <a href="#/blog" className="back-link" onClick={handleBackClick}>← 返回博客列表</a>
+        <a href="/personal-landing/#/blog" className="back-link" onClick={handleBackClick}>← 返回博客列表</a>
         
         <header className="post-header">
           <h1 className="post-title-full">{meta.title}</h1>
@@ -87,7 +87,7 @@ function BlogPost() {
         </div>
         
         <footer className="post-footer">
-          <a href="#/blog" className="back-link" onClick={handleBackClick}>← 返回博客列表</a>
+          <a href="/personal-landing/#/blog" className="back-link" onClick={handleBackClick}>← 返回博客列表</a>
         </footer>
       </div>
     </article>

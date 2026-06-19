@@ -24,13 +24,13 @@ function Header({ isHome = false }) {
               <a href="#skills" onClick={(e) => handleNavClick(e, '#skills')}>技能</a>
             </>
           ) : (
-            <a href="/">首页</a>
+            <a href="/personal-landing/">首页</a>
           )}
-          <a href="#/blog">博客</a>
+          <a href="/personal-landing/#/blog">博客</a>
           {isHome ? (
             <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>联系</a>
           ) : (
-            <a href="/">联系</a>
+            <a href="/personal-landing/">联系</a>
           )}
         </nav>
       </div>

@@ -68,7 +68,7 @@ function Blog({ onNavigate }) {
         <div className="posts-grid">
           {filteredPosts.map((post, index) => (
             <a 
-              href={`#/blog/${post.slug}`} 
+              href={`/personal-landing/#/blog/${post.slug}`} 
               key={index} 
               className="post-card"
               onClick={(e) => handlePostClick(post.slug, e)}
