@@ -16,27 +16,27 @@ summary: "工作之余，用镜头记录下的那个瞬间。"
 
 ## 📸 瞬间
 
-![风景 1](/personal-landing/lx01_01.jpg)
+![风景 1](/lx01_01.jpg)
 
-![风景 2](/personal-landing/lx01_02.jpg)
+![风景 2](/lx01_02.jpg)
 
-![风景 3](/personal-landing/lx01_03.jpg)
+![风景 3](/lx01_03.jpg)
 
 那一刻，我突然想到：
 
-![风景 4](/personal-landing/lx01_04.jpg)
+![风景 4](/lx01_04.jpg)
 
-![风景 5](/personal-landing/lx01_05.jpg)
+![风景 5](/lx01_05.jpg)
 
-![风景 6](/personal-landing/lx01_06.jpg)
+![风景 6](/lx01_06.jpg)
 
 有些风景，值得被定格。
 
-![风景 7](/personal-landing/lx01_07.jpg)
+![风景 7](/lx01_07.jpg)
 
-![风景 8](/personal-landing/lx01_08.jpg)
+![风景 8](/lx01_08.jpg)
 
-![风景 9](/personal-landing/lx01_09.jpg)
+![风景 9](/lx01_09.jpg)
 
 ---
 

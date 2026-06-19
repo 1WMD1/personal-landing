@@ -65,6 +65,11 @@ function BlogPost() {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
+              img({node, src, alt, ...props}) {
+                // 处理图片路径
+                const imageSrc = src.startsWith('/') ? src : src
+                return <img src={imageSrc} alt={alt} {...props} />
+              },
               code({node, inline, className, children, ...props}) {
                 const match = /language-(\w+)/.exec(className || '')
                 return !inline && match ? (
