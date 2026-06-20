@@ -8,27 +8,27 @@ summary: "工作之余，用镜头记录下的那个瞬间。"
 
 ## 📸 瞬间
 
-![风景 1](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_01.jpg)
+![风景 1](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_01.jpg?v=2)
 
-![风景 2](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_02.jpg)
+![风景 2](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_02.jpg?v=2)
 
-![风景 3](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_03.jpg)
+![风景 3](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_03.jpg?v=2)
 
 那一刻，我突然想到：
 
-![风景 4](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_04.jpg)
+![风景 4](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_04.jpg?v=2)
 
-![风景 5](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_05.jpg)
+![风景 5](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_05.jpg?v=2)
 
-![风景 6](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_06.jpg)
+![风景 6](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_06.jpg?v=2)
 
 有些风景，值得被定格。
 
-![风景 7](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_07.jpg)
+![风景 7](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_07.jpg?v=2)
 
-![风景 8](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_08.jpg)
+![风景 8](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_08.jpg?v=2)
 
-![风景 9](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_09.jpg)
+![风景 9](https://cdn.jsdelivr.net/gh/1WMD1/personal-landing@main/public/lx01_09.jpg?v=2)
 > 拍摄设备：手机  
 > 拍摄时间：2026年5月  
 > 地点：合肥·巢湖

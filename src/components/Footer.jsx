@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>My Portfolio</h3>
+            <h3>LUMINOVA VISTA-明晴志远</h3>
             <p>用代码创造美好事物</p>
           </div>
           <div className="footer-section">
@@ -26,7 +26,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {currentYear} My Portfolio. All rights reserved.</p>
+          <p>&copy; {currentYear} LUMINOVA VISTA-明晴志远. All rights reserved.</p>
         </div>
       </div>
     </footer>
