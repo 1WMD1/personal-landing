@@ -15,7 +15,10 @@ function Header({ isHome = false }) {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">My Portfolio</div>
+        <div className="logo">
+          <span className="logo-main">LUMINOVA VISTA</span>
+          <span className="logo-sub">明晴志远</span>
+        </div>
         <nav className="nav">
           {isHome ? (
             <>

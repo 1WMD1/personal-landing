@@ -21,9 +21,26 @@
 }
 
 .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.logo-main {
   font-size: 1.5rem;
   font-weight: bold;
   color: #2563eb;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.logo-sub {
+  font-size: 0.7rem;
+  color: #6b7280;
+  letter-spacing: 4px;
+  font-weight: 300;
+  opacity: 0.8;
 }
 
 .nav {
