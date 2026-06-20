@@ -1,9 +1,14 @@
 import './Hero.css'
 import heroImage from '../assets/wmd.jpg'
+import heroBg from '../assets/lx01_02.jpg'
 
 function Hero() {
   return (
     <section id="home" className="hero">
+      <div className="hero-background">
+        <img src={heroBg} alt="background" className="hero-bg-image" />
+        <div className="hero-overlay"></div>
+      </div>
       <div className="hero-content">
         <h1>你好，我是 <span className="highlight">吴明达</span></h1>
         <p className="subtitle">嵌入式系统工程师 | AI时代的超级个体</p>
