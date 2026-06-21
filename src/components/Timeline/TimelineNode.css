@@ -1,0 +1,79 @@
+.timeline-node {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+  opacity: 0;
+  animation: growDown 0.6s ease forwards;
+}
+
+/* 根须主线条 */
+.timeline-node::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: -2rem;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    #10b981,
+    #059669
+  );
+  border-radius: 2px;
+}
+
+/* 节点圆点 */
+.timeline-node::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 24px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border: 3px solid #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.timeline-node:hover::after {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 6px rgba(16, 185, 129, 0.3);
+  background: #10b981;
+}
+
+/* 生长动画 */
+@keyframes growDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 最后一个节点不显示向下的线 */
+.timeline-node:last-child::before {
+  display: none;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .timeline-node {
+    padding-left: 2.5rem;
+  }
+  
+  .timeline-node::before {
+    left: 10px;
+  }
+  
+  .timeline-node::after {
+    left: 4px;
+    width: 14px;
+    height: 14px;
+  }
+}

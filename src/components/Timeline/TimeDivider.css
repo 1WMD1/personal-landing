@@ -1,0 +1,28 @@
+.time-divider {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0 2rem;
+  gap: 1rem;
+}
+
+.divider-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #e11d48,
+    transparent
+  );
+}
+
+.divider-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e11d48;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(135deg, #fff1f2, #ffffff);
+  border-radius: 20px;
+  border: 2px solid #e11d48;
+  white-space: nowrap;
+}

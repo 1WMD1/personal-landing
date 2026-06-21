@@ -4,13 +4,13 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="contact-container">
-        <h2 className="section-title">联系我</h2>
+        <h2 className="section-title">💌 联系我们</h2>
         <div className="contact-content">
           <div className="contact-info">
-            <h3>让我们一起合作吧！</h3>
+            <h3>想对我们说点什么吗？</h3>
             <p>
-              如果你有任何问题或合作机会，欢迎随时联系我。
-              我会尽快回复你的消息。
+              这是我们的私密空间，记录着我们的点点滴滴。
+              如果你有任何想对我们说的话，欢迎联系。
             </p>
             <div className="contact-items">
               <div className="contact-item">

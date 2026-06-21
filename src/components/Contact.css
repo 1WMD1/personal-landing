@@ -1,6 +1,19 @@
 .contact {
   padding: 6rem 2rem;
-  background: #f8fafc;
+  background: transparent;
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 50% 50%, rgba(244, 114, 182, 0.1) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .contact-container {
@@ -29,16 +42,22 @@
 }
 
 .contact-info h3 {
-  font-size: 1.8rem;
-  color: #1f2937;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #ffffff, #fbb6ce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .contact-info > p {
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
   line-height: 1.6;
   max-width: 600px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .contact-item {
@@ -54,12 +73,14 @@
 
 .contact-item h4 {
   font-size: 1.1rem;
-  color: #1f2937;
+  color: #fbcfe8;
   margin-bottom: 0.25rem;
+  font-weight: 600;
 }
 
 .contact-item p {
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {

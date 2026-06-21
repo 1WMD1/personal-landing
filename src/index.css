@@ -15,12 +15,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #ffffff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
   color: #1f2937;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 #root {
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 .app {
@@ -31,8 +50,11 @@ body {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #1f2937;
+  color: #ffffff;
   position: relative;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .section-title::after {
@@ -41,10 +63,11 @@ body {
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 80px;
   height: 4px;
-  background: #2563eb;
+  background: linear-gradient(90deg, #f472b6, #e11d48, #be185d);
   border-radius: 2px;
+  box-shadow: 0 2px 10px rgba(225, 29, 72, 0.5);
 }
 
 @media (max-width: 768px) {
