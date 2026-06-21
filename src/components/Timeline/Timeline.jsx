@@ -10,9 +10,45 @@ const couplePosts = [
     type: 'photo-grid',
     author: '我们的故事',
     avatar: '/personal-landing/wmd.jpg',
-    time: '2024-06-21',
-    timestamp: new Date('2024-06-21').getTime(),
+    time: '2026-06-07',
+    timestamp: new Date('2026-06-21').getTime(),
     content: '💕 我们的美好时光，每一张照片都是珍贵的回忆～',
+    location: {
+      name: '中国合肥三十岗',
+      latitude: 31.9489,
+      longitude: 117.1531,
+      icon: '📍'
+    },
+    images: [
+      '/personal-landing/lx02_01.jpg',
+      '/personal-landing/lx02_02.jpg',
+      '/personal-landing/lx02_03.jpg',
+      '/personal-landing/lx02_04.jpg',
+      '/personal-landing/lx02_05.jpg',
+      '/personal-landing/lx02_06.jpg',
+      '/personal-landing/lx02_07.jpg',
+      '/personal-landing/lx02_08.jpg',
+      '/personal-landing/lx02_09.jpg'
+    ],
+    likes: 520,
+    comments: 13,
+    shares: 14,
+    liked: false
+  },
+  {
+    id: 'couple-photos-2',
+    type: 'photo-grid',
+    author: '我们的故事',
+    avatar: '/personal-landing/wmd.jpg',
+    time: '2026-05-31',
+    timestamp: new Date('2026-05-31').getTime(),
+    content: '记录下这是我们第一次一起出去,留下了美好的回忆',
+    location: {
+      name: '中国合肥巢湖小洱海',
+      latitude: 31.5944,
+      longitude: 117.8616,
+      icon: '🌅'
+    },
     images: [
       '/personal-landing/lx01_01.jpg',
       '/personal-landing/lx01_02.jpg',
@@ -24,49 +60,11 @@ const couplePosts = [
       '/personal-landing/lx01_08.jpg',
       '/personal-landing/lx01_09.jpg'
     ],
-    tags: ['我们的故事', '美好回忆', '幸福时光'],
-    likes: 520,
-    comments: 13,
-    shares: 14,
-    liked: false
-  },
-  {
-    id: 'couple-photos-2',
-    type: 'photo-grid',
-    author: '爱的记录',
-    avatar: '/personal-landing/wmd.jpg',
-    time: '2024-05-20',
-    timestamp: new Date('2024-05-20').getTime(),
-    content: '❤️ 520特别的日子，记录我们的甜蜜瞬间',
-    images: [
-      '/personal-landing/lx02_01.jpg',
-      '/personal-landing/lx01_01.jpg',
-      '/personal-landing/lx01_03.jpg',
-      '/personal-landing/lx01_05.jpg',
-      '/personal-landing/lx01_07.jpg',
-      '/personal-landing/lx01_09.jpg'
-    ],
-    tags: ['520', '甜蜜', '爱情'],
     likes: 999,
     comments: 52,
     shares: 20,
     liked: false
   },
-  {
-    id: 'weekend-sunset',
-    type: 'photo-single',
-    author: '吴明达',
-    avatar: '/personal-landing/wmd.jpg',
-    time: '2024-06-20',
-    timestamp: new Date('2024-06-20').getTime(),
-    content: '周末的 sunset，和你一起看最美的风景',
-    images: ['/personal-landing/lx01_02.jpg'],
-    tags: ['周末', '日落', '风景'],
-    likes: 128,
-    comments: 8,
-    shares: 3,
-    liked: false
-  }
 ]
 
 const timelineData = couplePosts

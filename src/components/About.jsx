@@ -28,14 +28,14 @@ function About() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>2024 - 2025</h3>
+                <h3>2026 - 2025</h3>
                 <p>嵌入式软件工程师 @ 江淮前沿技术协同创新研究中心</p>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>2021 - 2024</h3>
+                <h3>2021 - 2026</h3>
                 <p>嵌入式系统开发实习生 @ CVTE</p>
               </div>
             </div>

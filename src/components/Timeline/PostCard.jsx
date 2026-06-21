@@ -46,7 +46,24 @@ function PostCard({ post }) {
       
       <div className="post-content">
         {renderContent()}
+        
+        {/* 地理位置 */}
+        {post.location && (
+          <div className="post-location">
+            <span className="location-icon">{post.location.icon || '📍'}</span>
+            <span className="location-name">{post.location.name}</span>
+          </div>
+        )}
       </div>
+      
+      {/* 标签 */}
+      {post.tags && post.tags.length > 0 && (
+        <div className="post-tags">
+          {post.tags.map(tag => (
+            <span key={tag} className="tag">#{tag}</span>
+          ))}
+        </div>
+      )}
     </article>
   )
 }
